@@ -23,7 +23,7 @@ padding: 200px
   right: 0;
   left: 0;
   z-index: -1;
-  background: url(../Images/bar.jpg) center/cover fixed #511ab7;
+  background: url(../images/bar.jpg) center/cover fixed #511ab7;
   padding: 200px 0;
   border-radius: 15px;
 }
