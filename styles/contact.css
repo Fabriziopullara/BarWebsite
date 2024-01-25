@@ -1,0 +1,106 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body::after{
+  content: "";
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  background: url(../Images/bar.jpg) center/cover fixed #511ab7;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20px;
+  margin: auto;
+  align-items: center;
+  max-width: fit-content;
+  border: 2px solid rgba(0, 0, 0, 0.331);
+  border-radius: 5px;
+  background-color: rgba(165, 42, 42, 0.66);
+  padding: 10px;
+}
+
+.img-pasta {
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.name,
+.e-mail,
+.text-submit,
+.selector,
+.password {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.label {
+  background-color: rgba(0, 0, 0, 0.384);
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: rgba(138, 210, 96, 0.677);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: brown;
+}
+
+.boxes:hover {
+  background-color: rgba(192, 194, 196, 0.684);
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  display: flex;
+}
+.checkbox-container input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-container label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 0.05em solid black;
+  border-radius: 0.15em;
+  margin-right: 0.5em;
+}
+
+.checkbox-container label:hover::before {
+  background-color: lightgreen;
+}
+
+.checkbox-container input:checked + label::before {
+  content: "\002714";
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
