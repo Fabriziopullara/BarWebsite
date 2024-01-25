@@ -4,14 +4,18 @@ body {
 
 body::after{
   content: "";
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   z-index: -1;
-  background: url(../images/bar.jpg) center/cover fixed #511ab7;
+  background: url(../images/bar.jpg) center/cover fixed;
+}
+
+h1{
+  color: white;
 }
 
 .screen {
@@ -24,7 +28,7 @@ body::after{
   max-width: fit-content;
   border: 2px solid rgba(0, 0, 0, 0.331);
   border-radius: 5px;
-  background-color: rgba(165, 42, 42, 0.66);
+  background-color: rgba(26, 26, 26, 0.178);
   padding: 10px;
 }
 
@@ -54,6 +58,8 @@ body::after{
   text-align: center;
   padding-top: 3px;
 }
+
+
 
 .checkbox-container {
   display: flex;
